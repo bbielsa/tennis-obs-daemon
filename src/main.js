@@ -1,14 +1,8 @@
 const firebase = require('firebase');
 const { ObsProcessManager } = require('./obs_process_manager');
 
-const app = firebase.initializeApp({
-  apiKey: "***REMOVED***",
-  authDomain: "***REMOVED***",
-  databaseURL: "***REMOVED***",
-  projectId: "***REMOVED***",
-  storageBucket: "***REMOVED***.appspot.com",
-  messagingSenderId: "***REMOVED***"
-});
+const creds = require('../creds.json');
+const app = firebase.initializeApp(creds);
 
 const firestore = firebase.firestore();
 firestore.settings({ timestampsInSnapshots: true });
