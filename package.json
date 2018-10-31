@@ -1,0 +1,23 @@
+{
+  "name": "obs-daemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simply-jos/tennis-obs-daemon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simply-jos/tennis-obs-daemon/issues"
+  },
+  "homepage": "https://github.com/simply-jos/tennis-obs-daemon#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "firebase": "^5.5.6"
+  }
+}
