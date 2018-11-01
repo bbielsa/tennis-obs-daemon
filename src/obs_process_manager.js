@@ -29,11 +29,14 @@ exports.ObsProcessManager = class {
     }
 
     console.log(`Starting ${this.court_id}`);
-    this.process = spawn('obs',
+    this.process = spawn(process.argv[2],
       [
         '--startstreaming',
         '--profile', this.court_id,
-      ]
+      ],
+      {
+        cwd: process.argv[3]
+      }
     );
   }
 
