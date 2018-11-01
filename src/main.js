@@ -34,7 +34,7 @@ const courts = [
 
 ['exit', 'SIGINT', 'SIGUSR1', 'SIGUSR2', 'uncaughtException', 'SIGTERM'].forEach(eventType => {
     process.on(eventType, () => {
-      for (const court in courts) {
+      for (const court of courts) {
         court.process_manager.kill();
       }
 
