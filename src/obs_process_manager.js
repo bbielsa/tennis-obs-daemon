@@ -33,6 +33,8 @@ exports.ObsProcessManager = class {
       [
         '--startstreaming',
         '--profile', this.court_id,
+		'--collection', this.court_id + '_scene',
+		'--multi'
       ],
       {
         cwd: process.argv[3]
